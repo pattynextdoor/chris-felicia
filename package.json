@@ -7,8 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "vue-carousel": "^0.18.0",
+    "vue-router": "^3.0.3",
+    "vue2-slideout-panel": "^2.2.3"
   },
   "devDependencies": {
     "@vue/cli-service": "^3.8.0",
