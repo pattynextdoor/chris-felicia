@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "howler": "^2.1.2",
     "vue": "^2.6.10",
     "vue-carousel": "^0.18.0",
     "vue-router": "^3.0.3",

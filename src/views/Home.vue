@@ -60,10 +60,6 @@
 
           <div class="sound-btn" v-on:click="toggleAudio">
             <img class="sound-icon" src="@/assets/sound.png">
-            <audio id="audio">
-              <source :src="voiceClips[currentSlide]" type="audio/mp4">
-              Your browser does not support the audio element.
-            </audio>
           </div>
 
           <p class="slide-text">{{ slideText[currentSlide] }}</p>
@@ -258,6 +254,7 @@
 import AOS from 'aos'
 import { Carousel, Slide } from 'vue-carousel'
 import { Tabs, Tab } from 'vue-slim-tabs'
+import { Howl, Howler } from 'howler'
 
 export default {
   name: 'home',
@@ -279,33 +276,61 @@ export default {
         'It’s finally time! We have decided to throw it back to Riverside and celebrate our marriage with our closest family and friends at the historic Mission Inn, with its European inspired architecture Inland Empire hidden gem. We are doing our best to enjoy the process but mostly excited to have fun with everyone and to be married.'
       ],
       voiceClips: [
-        '@/assets/voice/2013.m4a',
-        '../assets/voice/2014.m4a',
-        '../assets/voice/2015.m4a',
-        '../assets/voice/2016.m4a',
-        '../assets/voice/2017.m4a',
-        '../assets/voice/2018.m4a',
-        '../assets/voice/2019.m4a',
+        'voice/2013.mp3',
+        'voice/2014.mp3',
+        'voice/2015.mp3',
+        'voice/2016.mp3',
+        'voice/2017.mp3',
+        'voice/2018.mp3',
+        'voice/2019.mp3',
       ],
-      currentSlide: 0
+      currentSlide: 0,
+    }
+  },
+  computed: {
+    currentClip: function() {
+      return new Howl({
+        src: [this.voiceClips[this.currentSlide]]
+      });
     }
   },
   methods: {
     handlePageChange: function(slideIndex) {
       this.$data.currentSlide = slideIndex;
+      
+      let currentClip = this.$data.currentClip;
+
+      currentClip.stop();
+      this.$data.currentClip = new Howl({
+          src: [this.$data.voiceClips[this.$data.currentSlide]],
+          html5: true,
+          onloaderror: function(id, error) { console.log('loadError: ' + id +' - ' + error)}
+      });
     },
     toggleAudio: function() {
-      let clip = new Audio(this.$data.voiceClips[this.$data.currentSlide]);
+      let currentClip = this.$data.currentClip;
 
-      if (!clip.paused || clip.currentTime) {
-        clip.pause();
-        console.log('Paused');
-      } 
-      else {
-        clip.play();
-        console.log('Playing');
+      if (!currentClip) {
+        let currentClip = new Howl({
+          src: [this.$data.voiceClips[this.$data.currentSlide]],
+          html5: true,
+          onloaderror: function(id, error) { console.log('loadError: ' + id +' - ' + error)}
+        });
+
+        this.$data.currentClip = currentClip;
       }
 
+      console.log(currentClip)
+
+      if (currentClip.playing()) {
+        currentClip.stop();
+        console.log('Clip stopped')
+      }
+
+      else {
+        currentClip.play();
+        console.log('Clip playing')
+      }
     }
   },
   mounted() {
