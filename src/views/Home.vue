@@ -16,43 +16,43 @@
             @page-change="handlePageChange"
             >
             <slide class="slide">
-              <img src="@/assets/slide1.jpg" alt="UV Blue & Orange Soda" class="slide-img">
+              <img src="https://i.imgur.com/90AK0vh.jpg" alt="UV Blue & Orange Soda" class="slide-img">
               <h2 class="slide-title">2013</h2>
               <h3 class="slide-subtitle">UV Blue & Orange Soda</h3>
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide2.jpg" alt="Mabolow" class="slide-img">
+              <img src="https://i.imgur.com/zJoyYry.jpg" alt="Mabolow" class="slide-img">
               <h2 class="slide-title">2014</h2>
               <h3 class="slide-subtitle">Mabolow</h3>
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide3.jpg" alt="F*ck Cancer" class="slide-img">
+              <img src="https://i.imgur.com/8SMZMDF.jpg" alt="F*ck Cancer" class="slide-img">
               <h2 class="slide-title">2015</h2>
               <h3 class="slide-subtitle">F*ck Cancer</h3>
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide4.jpg" alt="Gday Mate" class="slide-img">
+              <img src="https://i.imgur.com/g3f428R.jpg" alt="Gday Mate" class="slide-img">
               <h2 class="slide-title">2016</h2>
               <h3 class="slide-subtitle">G'day Mate!</h3>
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide5.jpg" alt="Moving Up & Moving In" class="slide-img">
+              <img src="https://i.imgur.com/TH2nJ8P.jpg" alt="Moving Up & Moving In" class="slide-img">
               <h2 class="slide-title">2017</h2>
               <h3 class="slide-subtitle">Moving Up & Moving In</h3>
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide6.jpg" alt="Sunrise Surprise" class="slide-img">
+              <img src="https://i.imgur.com/LLnaDLD.jpg" alt="Sunrise Surprise" class="slide-img">
               <h2 class="slide-title">2018</h2>
               <h3 class="slide-subtitle">Sunrise Surprise</h3>
             </slide>
             
             <slide class="slide">
-              <img src="@/assets/slide7.jpg" alt="Mission: Down the Aisle" class="slide-img">
+              <img src="https://i.imgur.com/mzzI6DV.jpg" alt="Mission: Down the Aisle" class="slide-img">
               <h2 class="slide-title">2019-2020</h2>
               <h3 class="slide-subtitle">Mission: Down the Aisle</h3>
             </slide>
@@ -75,21 +75,21 @@
             :per-page="1" 
             :navigation-enabled="true" >
 
-            <slide class="slide"><img src="@/assets/gal1.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal2.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal3.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal4.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal5.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal6.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal7.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal8.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal9.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal10.jpg" alt="" class="slide-img"></slide>
-            <slide class="slide"><img src="@/assets/gal11.jpg" alt="" class="slide-img"></slide>
+            <slide class="slide"><img src="@/assets/gal1.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal2.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal3.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal4.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal5.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal6.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal7.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal8.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal9.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal10.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="@/assets/gal11.jpg" alt="" class="slide-img gal-img"></slide>
 
           </carousel>
 
-          <iframe data-aos="fade-in" data-aos-duration="500" class="youtube" width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
+          <iframe class="youtube" width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
         </section>
         
         <section id="venue">
@@ -101,7 +101,7 @@
             <div class="venue-info">
               <h2 class="venue-title">The Mission Inn</h2>
               <p class="venue-sub">Riverside, CA</p>
-              <img class="venue-img" src="https://content.r9cdn.net/rimg/himg/86/56/20/leonardo-1086237-DSC_4450_f1_S-image.jpg?crop=true&width=500&height=350" alt="Mission Inn venue">
+              <img class="venue-img" src="https://markshimazuphotography.files.wordpress.com/2013/07/mission_inn_riverside_california_1.jpg" alt="Mission Inn venue">
               <p class="venue-blurb">The Mission Inn is a historical venue we both loved, even more so because of our sentimental ties in Riverside. Especially after our trip to Europe, we felt the venue mixed our Southern California roots and the architectural marvels we saw on our trip. In addition, we loved the convenience of having a ceremony, cocktail hour, and reception area all in one space.</p>
                 <p class="venue-p">“It is the most unique hotel in America. It’s a monastery, a museum, a fine hotel, a home, a boardinghouse, a mission, an art gallery and an aviator’s shrine. It combines the best features of all of the above. If you are ever in any part of California, <strong>don’t miss the famous Mission Inn of Riverside.</strong>”
                   <br/>
@@ -355,8 +355,9 @@ h1, h2 {
 
 .section-h2 {
   font-family: 'Marigold', cursive;
-  font-size: 3em;
+  font-size: 5em;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .section-h3 {
@@ -388,13 +389,14 @@ section#hero {
 .hero-h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Marigold', cursive;
-  padding-top: 15%;
+  padding-top: 12%;
   margin-bottom: 0;
   font-size: 5em;
   color: white;
 }
 
 .hero-h2 {
+  margin-top: 10px;
   font-size: 2em;
   font-family: 'Marigold', cursive;
   color: white;
@@ -426,6 +428,10 @@ section#our-story {
   padding-bottom: 10%;
 }
 
+.gal-img {
+  max-height: 750px;
+}
+
 .slide {
   background-color: #282828;
   display: flex;
@@ -440,7 +446,7 @@ section#our-story {
   position: absolute;
   top: 20%;
   text-align: center;
-  font-size: 6em;
+  font-size: 8em;
   color: white;
   width: 100%;
   font-family: 'Marigold', cursive;
@@ -450,7 +456,7 @@ section#our-story {
   position: absolute;
   top: 45%;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   color: white;
   width: 100%;
   font-family: 'Source Sans Pro', cursive;
@@ -462,8 +468,7 @@ section#our-story {
 .slide-img {
   display: inline-block;
   margin: auto;
-  max-width: 1000px;
-  max-height: 800px;
+  max-width: 100%;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -538,7 +543,7 @@ section#venue {
 }
 
 .venue-img {
-  width: 50%;
+  width: 66%;
   display: inline-block;
   margin: 0 auto;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
