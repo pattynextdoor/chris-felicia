@@ -371,7 +371,7 @@ section#hero {
   min-width: 100%;
   min-height: 100vh;
   position: relative;
-  background: url("../assets/hero.jpg");
+  background: url("https://i.imgur.com/D8cNkgn.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
