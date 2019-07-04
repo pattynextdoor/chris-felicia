@@ -6,6 +6,7 @@
         <section id="hero">
           <h1 class="hero-h1" data-aos="fade-down">christian & felicia</h1>
           <h2 class="hero-h2" data-aos="fade-up" data-aos-delay="300">february 22, 2020</h2>
+          <div class="icon-scroll"></div>
         </section>
 
         <section id="our-story" >
@@ -87,7 +88,6 @@
             <slide class="slide"><img src="https://i.imgur.com/T4yhOai.jpg" alt="" class="slide-img gal-img"></slide>
 
           </carousel>
-
           <iframe class="youtube" width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
         </section>
         
@@ -384,6 +384,53 @@ section#hero {
               0px 8px 13px rgba(0,0,0,0.1),
               0px 18px 23px rgba(0,0,0,0.1);
 }
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-top: 25%;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+@-moz-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
 
 .hero-h1 {
   font-family: 'Josefin Sans', sans-serif;
