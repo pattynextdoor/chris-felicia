@@ -15,7 +15,7 @@
             :navigation-enabled="true" 
             @page-change="handlePageChange"
             >
-            <slide class="slide" data-aos="fade-in" data-aos-duration="500">
+            <slide class="slide">
               <img src="@/assets/slide1.jpg" alt="UV Blue & Orange Soda" class="slide-img">
               <h2 class="slide-title">2013</h2>
               <h3 class="slide-subtitle">UV Blue & Orange Soda</h3>
@@ -75,7 +75,7 @@
             :per-page="1" 
             :navigation-enabled="true" >
 
-            <slide class="slide" data-aos="fade-in" data-aos-duration="500"><img src="@/assets/gal1.jpg" alt="" class="slide-img"></slide>
+            <slide class="slide"><img src="@/assets/gal1.jpg" alt="" class="slide-img"></slide>
             <slide class="slide"><img src="@/assets/gal2.jpg" alt="" class="slide-img"></slide>
             <slide class="slide"><img src="@/assets/gal3.jpg" alt="" class="slide-img"></slide>
             <slide class="slide"><img src="@/assets/gal4.jpg" alt="" class="slide-img"></slide>
@@ -101,7 +101,7 @@
             <div class="venue-info">
               <h2 class="venue-title">The Mission Inn</h2>
               <p class="venue-sub">Riverside, CA</p>
-              <img class="venue-img" src="https://s-ec.bstatic.com/images/hotel/max1280x900/125/125386476.jpg" alt="Mission Inn venue">
+              <img class="venue-img" src="https://content.r9cdn.net/rimg/himg/86/56/20/leonardo-1086237-DSC_4450_f1_S-image.jpg?crop=true&width=500&height=350" alt="Mission Inn venue">
               <p class="venue-blurb">The Mission Inn is a historical venue we both loved, even more so because of our sentimental ties in Riverside. Especially after our trip to Europe, we felt the venue mixed our Southern California roots and the architectural marvels we saw on our trip. In addition, we loved the convenience of having a ceremony, cocktail hour, and reception area all in one space.</p>
                 <p class="venue-p">“It is the most unique hotel in America. It’s a monastery, a museum, a fine hotel, a home, a boardinghouse, a mission, an art gallery and an aviator’s shrine. It combines the best features of all of the above. If you are ever in any part of California, <strong>don’t miss the famous Mission Inn of Riverside.</strong>”
                   <br/>
@@ -121,23 +121,23 @@
           <hr class="hr">
 
           <div class="schedule-grid">
-            <div class="schedule-item" id="ceremony" data-aos="zoom-out" data-aos-delay="0">
+            <div class="schedule-item" id="ceremony" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="0">
               <img class="schedule-icon" src="@/assets/church.png">
               <h3>Ceremony</h3>
-              <p class="schedule-location">St. Francis of Assisi Chapel</p>
               <p class="schedule-time">6:00PM</p>
+              <p class="schedule-location">St. Francis of Assisi Chapel</p>
             </div>
-            <div class="schedule-item" id="reception" data-aos="zoom-out" data-aos-delay="250">
+            <div class="schedule-item" id="reception" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="250">
               <img class="schedule-icon" src="@/assets/celebration.png">
               <h3>Cocktail Hour</h3>
-              <p class="schedule-location">The Grand Parisian Ballroom</p>
               <p class="schedule-time">6:30PM</p>
+              <p class="schedule-location">The Grand Parisian Ballroom</p>
             </div>
-            <div class="schedule-item" id="reception" data-aos="zoom-out" data-aos-delay="500">
+            <div class="schedule-item" id="reception" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="500">
               <img class="schedule-icon" src="@/assets/wedding-reception.png">
               <h3>Reception</h3>
-              <p class="schedule-location">The Grand Parisian Ballroom</p>
               <p class="schedule-time">7:30PM</p>
+              <p class="schedule-location">The Grand Parisian Ballroom</p>
             </div>
           </div>
 
@@ -199,7 +199,7 @@
                   <a href="http://www.parks.ca.gov/?page_id=649">California Citrus State Historic Park</a>
                 </li>
                 <li>
-                  <a href="https://market.glessranch.com/">Glass Ranch Farmer's Market</a>
+                  <a href="https://market.glessranch.com/">Gless Ranch Farmer's Market</a>
                 </li>
               </ul>
             </tab>
@@ -317,7 +317,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito+Sans|Lato|Amatic+SC|Source+Sans+Pro&display=swap');
 
 @font-face {
     font-family: 'Marigold';
@@ -331,6 +331,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: #e5dfe7;
 }
 
@@ -339,7 +340,7 @@ h1, h2 {
   }
 
 .container {
-  padding: 0 20%;
+  padding: 0 10%;
 }
 
 .content {
@@ -379,7 +380,9 @@ section#hero {
 
 .hero-h1, .hero-h2 {
   text-align: center;
-  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+              0px 8px 13px rgba(0,0,0,0.1),
+              0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .hero-h1 {
@@ -387,12 +390,12 @@ section#hero {
   font-family: 'Marigold', cursive;
   padding-top: 15%;
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 5em;
   color: white;
 }
 
 .hero-h2 {
-  font-size: 25px;
+  font-size: 2em;
   font-family: 'Marigold', cursive;
   color: white;
 }
@@ -435,9 +438,9 @@ section#our-story {
 
 .slide-title {
   position: absolute;
-  top: 25%;
+  top: 20%;
   text-align: center;
-  font-size: 5em;
+  font-size: 6em;
   color: white;
   width: 100%;
   font-family: 'Marigold', cursive;
@@ -445,12 +448,14 @@ section#our-story {
 
 .slide-subtitle {
   position: absolute;
-  top: 50%;
+  top: 45%;
   text-align: center;
   font-size: 2em;
   color: white;
   width: 100%;
   font-family: 'Source Sans Pro', cursive;
+  font-family: 'Nunito Sans', sans serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -493,6 +498,7 @@ section#our-story {
   max-width: 25px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 section#gallery {
@@ -555,21 +561,26 @@ section#venue {
 
 .schedule-grid {
   display: grid;
-  padding: 3% 25%;
+  padding: 3% 15%;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 15%;
+  grid-column-gap: 25%;
 }
 
 .schedule-item {
   text-align: center;
+  font-size: 1.25em;
 }
 
 .schedule-icon {
-  width: 75%;
+  width: 50%;
+}
+
+.schedule-time {
+  font-size: 1.75em;
 }
 
 .schedule-location {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .parking-info {
