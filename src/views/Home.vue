@@ -8,23 +8,23 @@
           <h2 class="hero-h2" data-aos="fade-up" data-aos-delay="300">february 22, 2020</h2>
         </section>
 
-        <section id="our-story" data-aos="flip-up" data-aos-anchor="center-center">
+        <section id="our-story" >
 
           <carousel 
             :per-page="1" 
             :navigation-enabled="true" 
-            @page-change="handlePageChange">
-            
-            <slide class="slide">
+            @page-change="handlePageChange"
+            >
+            <slide class="slide" data-aos="fade-in" data-aos-duration="500">
               <img src="@/assets/slide1.jpg" alt="UV Blue & Orange Soda" class="slide-img">
               <h2 class="slide-title">2013</h2>
               <h3 class="slide-subtitle">UV Blue & Orange Soda</h3>
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide2.jpg" alt="Work/Love Balance" class="slide-img">
+              <img src="@/assets/slide2.jpg" alt="Mabolow" class="slide-img">
               <h2 class="slide-title">2014</h2>
-              <h3 class="slide-subtitle">Work/Love Balance</h3>
+              <h3 class="slide-subtitle">Mabolow</h3>
             </slide>
 
             <slide class="slide">
@@ -46,9 +46,9 @@
             </slide>
 
             <slide class="slide">
-              <img src="@/assets/slide6.jpg" alt="Barcelona Sunrise Surprise" class="slide-img">
+              <img src="@/assets/slide6.jpg" alt="Sunrise Surprise" class="slide-img">
               <h2 class="slide-title">2018</h2>
-              <h3 class="slide-subtitle">Barcelona Sunrise Surprise</h3>
+              <h3 class="slide-subtitle">Sunrise Surprise</h3>
             </slide>
             
             <slide class="slide">
@@ -75,7 +75,7 @@
             :per-page="1" 
             :navigation-enabled="true" >
 
-            <slide class="slide"><img src="@/assets/gal1.jpg" alt="" class="slide-img"></slide>
+            <slide class="slide" data-aos="fade-in" data-aos-duration="500"><img src="@/assets/gal1.jpg" alt="" class="slide-img"></slide>
             <slide class="slide"><img src="@/assets/gal2.jpg" alt="" class="slide-img"></slide>
             <slide class="slide"><img src="@/assets/gal3.jpg" alt="" class="slide-img"></slide>
             <slide class="slide"><img src="@/assets/gal4.jpg" alt="" class="slide-img"></slide>
@@ -89,20 +89,20 @@
 
           </carousel>
 
-          <iframe width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
+          <iframe data-aos="fade-in" data-aos-duration="500" class="youtube" width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
         </section>
         
-        <section id="venue" data-aos="zoom-in-down" data-aos-delay="" data-aos-duration="500">
-          <h2 class="section-h2">
+        <section id="venue">
+          <h2 class="section-h2" data-aos="fade-down" data-aos-duration="500">
             Venue
           </h2>
-          <div id="venue-grid" >
+          <hr class="hr" data-aos="zoom-in" data-aos-duration="750" data-aos-delay="300">
+          <div id="venue-grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
             <div class="venue-info">
               <h2 class="venue-title">The Mission Inn</h2>
               <p class="venue-sub">Riverside, CA</p>
+              <img class="venue-img" src="https://s-ec.bstatic.com/images/hotel/max1280x900/125/125386476.jpg" alt="Mission Inn venue">
               <p class="venue-blurb">The Mission Inn is a historical venue we both loved, even more so because of our sentimental ties in Riverside. Especially after our trip to Europe, we felt the venue mixed our Southern California roots and the architectural marvels we saw on our trip. In addition, we loved the convenience of having a ceremony, cocktail hour, and reception area all in one space.</p>
-              <div class="grid-2">
-                <img class="venue-img" src="https://s-ec.bstatic.com/images/hotel/max1280x900/125/125386476.jpg" alt="Mission Inn venue">
                 <p class="venue-p">“It is the most unique hotel in America. It’s a monastery, a museum, a fine hotel, a home, a boardinghouse, a mission, an art gallery and an aviator’s shrine. It combines the best features of all of the above. If you are ever in any part of California, <strong>don’t miss the famous Mission Inn of Riverside.</strong>”
                   <br/>
                   <br/>
@@ -111,7 +111,6 @@
                   <br/>
                   <a href="https://www.missioninn.com/" style="font-style: normal">Learn More</a>
                 </p>
-              </div>
             </div>
 
             <iframe width="75%" height="450" frameborder="0" style="border:0; display: block; margin: 0 auto; margin-bottom: 10%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJg3TJrfqx3IARsr-VCrwey7I&key=AIzaSyAwG-CZCgy-J54KMnrVopJQudOe5YRSFE0" allowfullscreen></iframe> 
@@ -119,6 +118,7 @@
           </div>
 
           <h2 class="section-h2">Schedule</h2>
+          <hr class="hr">
 
           <div class="schedule-grid">
             <div class="schedule-item" id="ceremony" data-aos="zoom-out" data-aos-delay="0">
@@ -148,11 +148,108 @@
             <p><span class="parking-price">$23</span> for valet services</p>
           </div>
           
-          <p style="text-align: center;">Limited street parking on 6th and Orange St. is available, as well as a parking garage with 90 minutes free.</p>
+          <p class="parking-disc" >Limited street parking on 6th and Orange St. is available, as well as a parking garage with 90 minutes free.</p>
 
+          <h3 class="section-h3">Accomodations</h3> 
+
+          <div class="acc-grid">
+            <a href="https://www.missioninn.com/stay.html" class="acc">
+              <img src="@/assets/mission.png" alt="Mission Inn Logo" class="acc-logo">
+            </a>
+            
+
+            <a href="https://www.hyatt.com/en-US/hotel/california/hyatt-place-riverside-downtown/ralzr/maps-parking-transportation" class="acc">
+              <img src="@/assets/hyatt-logo.png" alt="Hyatt Logo" class="acc-logo">
+            </a>
+          </div>
+
+          <p style="text-align: center; padding: 0 33%; font-size: 1.5em;">Room blocks TBA</p>
+
+          <h3 class="section-h3">Whose Side? R'Side!</h3>
+          <p style="text-align: center; padding: 0 25%;">Below are a couple of places we feel are hidden gems in Riverside and many are places we went to together in our first year of dating.</p>
+        
+          <tabs class="activities" data-aos="flip-left" data-aos-delay="150">
+            <tab title="What To Do">
+              <ul class="list">
+                <li>
+                  <a href="https://missioninnmuseum.org/">Historic Mission Inn Museum</a>
+                </li>
+                <li>
+                  <a href="https://www.planning.org/greatplaces/spaces/2011/fairmountpark.htm">Fairmount Park</a>
+                </li>
+                <li>
+                  <a href="https://www.tripadvisor.com/Attraction_Review-g32978-d3850394-Reviews-Mount_Rubidoux_Park-Riverside_California.html">Mt.Rubidoux</a>
+                </li>
+                <li>
+                  <a href="https://www.shopriversideplaza.com/">Riverside Plaza</a>
+                </li>
+                <li>
+                  <a href="http://www.weirdca.com/location.php?location=421">World's Largest Paper Cup</a>
+                </li>
+                <li>
+                  <a href="https://belltower.ucr.edu/subpage.php?content=history.html">UCR Belltower</a>
+                </li>
+                <li>
+                  <a href="https://gardens.ucr.edu/">UCR Botanical Garden</a>
+                </li>
+                <li>
+                  <a href="https://vanburendriveintheatre.com/">Van Buren Drive-In Theater</a>
+                </li>
+                <li>
+                  <a href="http://www.parks.ca.gov/?page_id=649">California Citrus State Historic Park</a>
+                </li>
+                <li>
+                  <a href="https://market.glessranch.com/">Glass Ranch Farmer's Market</a>
+                </li>
+              </ul>
+            </tab>
+
+            <tab title="Where To Eat">
+              <ul class="list">
+                <li>
+                  <a href="https://www.proabition.com/">ProAbition</a>
+                </li>
+                <li>
+                  <a href="https://www.simplesimonsbakerybistro.com/">Simple Simon's</a>
+                </li>
+                <li>
+                  <a href="https://www.riversidefoodlab.com/">Riverside Food Lab</a>
+                </li>
+                <li>
+                  <a href="http://www.back2thegrind.com/">Back To The Grind</a>
+                </li>
+                <li>
+                  <a href="https://www.heroesrestaurantandbrewery.com/">Heroes Restaurant & Brewery</a>
+                </li>
+                <li>
+                  <a href="http://www.thesaltedpig.com/">The Salted Pig</a>
+                </li>
+                <li>
+                  <a href="http://punjabpalacecuisine.com/">Punjab Palace</a>
+                </li>
+                <li>
+                  <a href="https://www.oceanpho.com/riverside-menu">Ocean Pho</a>
+                </li>
+                <li>
+                  <a href="http://losjilbertosriverside.com/">Los Jilbertos</a>
+                </li>
+                <li>
+                  <a href="https://www.rice-spice.com/">Thai Rice & Spice</a>
+                </li>
+              </ul>
+            </tab>
+          </tabs>
+
+          <h3 class="section-h3">Registry</h3>
+
+          <p style="text-align: center;">TBA</p>
           
+          <h3 class="section-h3">RSVP</h3>
 
+          <p style="text-align: center; padding-bottom: 15%;">TBA</p> 
+        
         </section>
+
       </div>
     </div>
   </div>
@@ -162,12 +259,15 @@
 // @ is an alias to /src
 import AOS from 'aos'
 import { Carousel, Slide } from 'vue-carousel'
+import { Tabs, Tab } from 'vue-slim-tabs'
 
 export default {
   name: 'home',
   components: {
     Carousel,
-    Slide
+    Slide,
+    Tabs,
+    Tab,
   },
   data: function() { 
     return {
@@ -238,10 +338,6 @@ h1, h2 {
   font-family: 'Josefin Sans', sans-serif;
   }
 
-section {
-  background-color: #f7f7f7;
-}
-
 .container {
   padding: 0 20%;
 }
@@ -250,8 +346,10 @@ section {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  background-color: #282828;
+}
 
+.hr {
+  width: 25%;
 }
 
 .section-h2 {
@@ -264,6 +362,7 @@ section {
   font-size: 2em;
   text-align: center;
   text-transform: uppercase;
+  margin: 5% 0;
 }
 
 section#hero {
@@ -363,7 +462,8 @@ section#our-story {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.VueCarousel-pagination {
+.VueCarousel-navigation-button {
+  font-size: 2em;
 }
 
 .slide-text {
@@ -373,6 +473,7 @@ section#our-story {
   color: white;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
   font-size: 1.2em;
+  margin-bottom: 0;
 }
 
 .sound-btn {
@@ -385,6 +486,7 @@ section#our-story {
   border: 1px solid black;
   padding: 10px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-top: 2%;
 }
 
 .sound-icon {
@@ -412,6 +514,7 @@ section#venue {
 
 .venue-title {
   margin-bottom: 0;
+  font-size: 3em;
 }
 
 .venue-sub {
@@ -419,18 +522,17 @@ section#venue {
 }
 
 .venue-blurb {
-  padding: 0 25%;
+  padding: 0 12.5%;
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5%;
-  margin: 5% 0;
+  margin: 5%;
 }
 
 .venue-img {
-  width: 100%;
+  width: 50%;
   display: inline-block;
   margin: 0 auto;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -443,7 +545,8 @@ section#venue {
   background-color: #f7f7f7;
   border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  padding: 10%;
+  padding: 5% 7%;
+  margin: 5% auto;
 }
 
 #map {
@@ -480,5 +583,159 @@ section#venue {
 .parking-price {
   font-size: 2em;
 }
+
+.parking-disc {
+  text-align: center;
+  padding: 0 33%;
+}
+
+.acc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.acc {
+  display: inline-block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.acc-logo {
+  max-width: 250px;
+  border-radius: 5%;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.acc-logo:hover {
+  transform: scale(1.1);
+}
+
+section#whattodo {
+  background-color: white;
+}
+
+.activities {
+  width: 33%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 19px 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+ul.list {
+  list-style: none;
+  padding-bottom: 5%;
+  line-height: 2;
+}
+
+ul.list>li>a {
+  color: black;
+}
+
+.vue-tablist {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.vue-tab {
+  padding: 4% 10%;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-bottom-color: #e2e2e2;
+  border-radius: 3px 3px 0 0;
+  background-color: white;
+  position: relative;
+  bottom: -1px;
+}
+
+.vue-tab[aria-selected="true"] {
+  border-color: #e2e2e2;
+  border-bottom-color: transparent;
+}
+
+.vue-tab[aria-disabled="true"] {
+  cursor: not-allowed;
+  color: #999;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+  {
+    .container {
+      padding: 0;
+    }
+
+    .hero-h1 {
+      padding-top: 60%;
+      font-size: 50px;
+    } 
+
+    .hero-h2 {
+      font-size: 30px;
+    }
+
+    .slide-title {
+      font-size: 2em;
+    }
+
+    .slide-subtitle {
+      font-size: 1em;
+    }
+
+    .slide-img {
+      max-width: 375px;
+    }
+
+    .slide-text {
+      font-size: 1.1em;
+      padding: 5% 12%;
+    }
+
+    .youtube {
+      width: 100%;
+      height: 250px;
+    }
+
+    .venue-title {
+      font-size: 2em;
+    }
+
+    .venue-img {
+      width: 100%;
+    }
+
+    .venue-blurb {
+      padding: 0 6%;
+    }
+
+    .venue-p {
+      width: 75%;
+    }
+
+    .schedule-grid {
+      padding: 3% 0;
+      grid-column-gap: 2%;
+    }
+
+    .parking-info {
+      padding: 0 15%;
+    }
+
+    .parking-disc {
+      padding: 0 12.5%;
+    }
+
+    .acc-logo {
+      max-width: 100px;
+    }
+
+    .activities {
+      width: 80%;
+    }
+  }
 
 </style>
