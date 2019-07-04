@@ -75,17 +75,16 @@
             :per-page="1" 
             :navigation-enabled="true" >
 
-            <slide class="slide"><img src="@/assets/gal1.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal2.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal3.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal4.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal5.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal6.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal7.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal8.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal9.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal10.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="@/assets/gal11.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/zmVMgee.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/SsFDdBZ.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/f55FZ22.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/ti7XerO.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/sD1qZ6r.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/6IhUCbd.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/iXLyod2.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/WFPiQib.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/BijwowR.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/T4yhOai.jpg" alt="" class="slide-img gal-img"></slide>
 
           </carousel>
 
