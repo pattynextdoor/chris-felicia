@@ -12,7 +12,6 @@
 
           <carousel 
             :per-page="1" 
-            :navigation-enabled="true" 
             @page-change="handlePageChange"
             >
             <slide class="slide">
@@ -22,7 +21,7 @@
             </slide>
 
             <slide class="slide">
-              <img src="https://i.imgur.com/zJoyYry.jpg" alt="Mabolow" class="slide-img">
+              <img src="https://i.imgur.com/luM1KqL.jpg" alt="Mabolow" class="slide-img">
               <h2 class="slide-title">2014</h2>
               <h3 class="slide-subtitle">Mabolow</h3>
             </slide>
@@ -69,7 +68,7 @@
         <section id="gallery">
           <carousel 
             :per-page="1" 
-            :navigation-enabled="true" >
+            >
 
             <slide class="slide"><img src="https://i.imgur.com/zmVMgee.jpg" alt="" class="slide-img gal-img"></slide>
             <slide class="slide"><img src="https://i.imgur.com/SsFDdBZ.jpg" alt="" class="slide-img gal-img"></slide>
@@ -115,19 +114,19 @@
           <hr class="hr">
 
           <div class="schedule-grid">
-            <div class="schedule-item" id="ceremony" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="0">
+            <div class="schedule-item" id="ceremony" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
               <img class="schedule-icon" src="@/assets/church.png">
               <h3>Ceremony</h3>
               <p class="schedule-time">6:00PM</p>
               <p class="schedule-location">St. Francis of Assisi Chapel</p>
             </div>
-            <div class="schedule-item" id="reception" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="250">
+            <div class="schedule-item" id="reception" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="250">
               <img class="schedule-icon" src="@/assets/celebration.png">
               <h3>Cocktail Hour</h3>
               <p class="schedule-time">6:30PM</p>
               <p class="schedule-location">The Grand Parisian Ballroom</p>
             </div>
-            <div class="schedule-item" id="reception" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="500">
+            <div class="schedule-item" id="reception" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <img class="schedule-icon" src="@/assets/wedding-reception.png">
               <h3>Reception</h3>
               <p class="schedule-time">7:30PM</p>
@@ -157,12 +156,11 @@
             </a>
           </div>
 
-          <p style="text-align: center; padding: 0 33%; font-size: 1.5em;">Room blocks TBA</p>
 
           <h3 class="section-h3">Whose Side? R'Side!</h3>
-          <p style="text-align: center; padding: 0 25%;">Below are a couple of places we feel are hidden gems in Riverside and many are places we went to together in our first year of dating.</p>
+          <p class="rside-blurb">Below are a couple of places we feel are hidden gems in Riverside and many are places we went to together in our first year of dating.</p>
         
-          <tabs class="activities" data-aos="flip-left" data-aos-delay="150">
+          <tabs class="activities" data-aos="flip-down" data-aos-delay="150">
             <tab title="What To Do">
               <ul class="list">
                 <li>
@@ -234,16 +232,11 @@
             </tab>
           </tabs>
 
-          <h3 class="section-h3">Registry</h3>
-
-          <p style="text-align: center;">TBA</p>
           
-          <h3 class="section-h3">RSVP</h3>
-
-          <p style="text-align: center; padding-bottom: 15%;">TBA</p> 
-        
         </section>
-
+        <div class="footer">
+            Website by <a href="https://patricktumbucon.com">Patrick Tumbucon</a>
+        </div>
       </div>
     </div>
   </div>
@@ -267,13 +260,13 @@ export default {
   data: function() { 
     return {
       slideText: [
-        'Christian and Felicia met in spring of 2013 at a mutual friend’s kickback birthday party. Felicia was convinced to take a group shot of UV blue, Christian’s signature handle, and they shared a chaser of orange soda. Throughout the night, Christian was pouring UV blue shots for everybody but kept coming back to Felicia. He convinced her to re-download Snapchat so they can take drunk selfies to send. They continued to communicate through Snapchat well after the party was over and finally exchanged numbers, and literally haven’t stopped texting ever since.',
-        'As 2 UCR graduates, we both joined the workforce, Felicia with city government and Christian for a financial firm. Transitioning from school to career was tough but they also had a lot of fun celebrating their first anniversary, going to 3 different county fairs in one summer, and taking their first international trip together to the Philippines where they met each others family abroad and were able to take a side trip to Palawan.',
+        'In the spring of 2013 we met at a mutual friend’s kickback birthday party. We took a group shot of UV Blue together (His handle of choice in his frat days), and we shared a chaser of orange soda. Throughout the night, we took many drunk selfies together on Snapchat. We continued to communicate through Snapchat well after the party was over then finally exchanged numbers, and the rest was history.',
+        'We took our first international trip together to the Philippines where we met each others family abroad and were able to take a side trip to Palawan. Some of our favorite experiences were island hopping, snorkling and living it up in Mabolo (aka Mabolow to Christian, Felicia’s Lolo’s house)',
         'Thinking about 2015 makes us not want to think of 2015. We lost a handful of close family members to cancer, and most notably both of our dads were diagnosed with pancreatic cancer, receiving the diagnosis just 10 days between each other. Both lost their battle to the disease within a year of diagnosis. Somehow we were lucky in the most unlucky way to be going through this together. Ultimately, we are thankful that they are no longer suffering, and that we got that time with them that we did. We know that they are looking down at us today and just as excited as the rest of our families.',
-        'After the difficult year, Christian and Felicia decided to treat themselves to an international trip down under. They stayed in a little beach town called Cottesloe not far from Perth in Western Australia, which was the perfect mix of relaxing and adventure.',
-        'Christian received a position for the county and now worked in DTLA, meaning that they worked only 2 blocks from each other and it made sense for them to move in together. They bought their first Christmas tree together and even had a tree lighting ceremony. They found in easy to live together (especially since they do not share a bathroom).',
-        'For their 5 year anniversary, Christian surprised Felicia with tickets to Barcelona that fall. They excitedly planned a Europe trip around those tickets and less than a week before Felicia jokingly said that he could propose to her on the trip ‘if he wanted’. Little did she know that he had the ring since January. Once in Barcelona, Christian asked Felicia why she didn’t get her nails done before the trip since she had gotten her hair and eyelashes done. Suddenly, Felicia was paranoid at every turn and quickly got her nails done just in case. One morning they decided to watch the sunrise and Christian said he had  heard of a place. Exactly as the sun rose, from the top of a fortress overlooking the city from the spanish civil war, Christian got on one knee. They celebrated with a bottle of Cava from the secret photographer and enjoyed the rest of their European vacation in engaged bliss.',
-        'It’s finally time! We have decided to throw it back to Riverside and celebrate our marriage with our closest family and friends at the historic Mission Inn, with its European inspired architecture Inland Empire hidden gem. We are doing our best to enjoy the process but mostly excited to have fun with everyone and to be married.'
+        'After the difficult year, we decided to treat ourselves to an international trip down under. We stayed in a little beach town called Cottesloe not far from Perth in Western Australia, which was the perfect mix of relaxing and adventure. One of our favorite memories are feeding the kangeroos but also cooking kangeroo meat. We loved meeting all the other Australian animals like wombats, quokkas, and koalas.',
+        'Christian received a position for the county and now worked in DTLA, meaning that we worked only two blocks from each other and it made sense for us to move in together. Their favorite part about living together is getting to see each other everyday.',
+        'For our 5 year anniversary, we had a Europe trip planned for the fall starting in Barcelona. We excitedly planned our itinerary but there was one plan that half of us were not privy to. We got engaged right at sunrise on top of a fortress from the Spanish Civil War that had a 360 degree view of the city, with a secret photographer to capture everything. We celebrated with a bottle of Cava and got to enjoy the rest of our trip in engaged bliss.',
+        'It’s finally time! We have decided to throw it back to Riverside and celebrate our marriage with our closest family and friends at the Mission Inn. We are so excited to be married and have a great time with everyone on our big day.'
       ],
       voiceClips: [
         'voice/2013.mp3',
@@ -348,6 +341,10 @@ export default {
           url('../assets/marigold/marigold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+.home {
+  overflow-x: hidden;
 }
 
 html, body {
@@ -655,6 +652,11 @@ section#whattodo {
   background-color: white;
 }
 
+.rside-blurb {
+  text-align: center;
+  padding: 0 33%;
+}
+
 .activities {
   width: 33%;
   margin: 0 auto;
@@ -701,6 +703,19 @@ ul.list>li>a {
   color: #999;
 }
 
+section {
+  padding-bottom: 25%;
+}
+
+.footer {
+  text-align: center;
+  background-color: transparent;
+}
+
+.footer > a {
+  text-decoration: none;
+}
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px)
@@ -710,12 +725,17 @@ ul.list>li>a {
     }
 
     .hero-h1 {
+      margin-top: 0;
       padding-top: 60%;
       font-size: 50px;
     } 
 
     .hero-h2 {
       font-size: 30px;
+    }
+
+    .section-h2 {
+      font-size: 3em;
     }
 
     .slide-title {
@@ -756,13 +776,35 @@ ul.list>li>a {
       width: 75%;
     }
 
+    .schedule-icon {
+      width: 25%;
+    }
+
     .schedule-grid {
       padding: 3% 0;
-      grid-column-gap: 2%;
+      grid-template-columns: 1fr;
+      grid-row-gap: 5%;
+    }
+
+    .section-h3 {
+      padding-top: 25%;
+    }
+
+    .schedule-time {
+      font-size: 1.25em;
+    }
+
+    .schedule-location {
+      font-size: 0.75em;
     }
 
     .parking-info {
       padding: 0 15%;
+    }
+
+    .parking-info > p {
+      font-size: 1em;
+      text-align: center;
     }
 
     .parking-disc {
