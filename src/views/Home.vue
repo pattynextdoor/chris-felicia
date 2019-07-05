@@ -345,11 +345,13 @@ export default {
 
 .home {
   overflow-x: hidden;
+  width: 100%;
 }
 
 html, body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
   background-color: #e5dfe7;
@@ -704,12 +706,14 @@ ul.list>li>a {
 }
 
 section {
-  padding-bottom: 25%;
+  padding: 12.5% 0;
 }
 
 .footer {
   text-align: center;
   background-color: transparent;
+  display: block;
+  margin: auto auto;
 }
 
 .footer > a {
@@ -813,6 +817,10 @@ section {
 
     .acc-logo {
       max-width: 100px;
+    }
+
+    .rside-blurb {
+      padding: 0 12%;
     }
 
     .activities {
