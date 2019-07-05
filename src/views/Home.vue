@@ -95,7 +95,7 @@
               <h2 class="venue-title">The Mission Inn</h2>
               <p class="venue-sub">Riverside, CA</p>
               <img class="venue-img" src="https://markshimazuphotography.files.wordpress.com/2013/07/mission_inn_riverside_california_1.jpg" alt="Mission Inn venue">
-              <p class="venue-blurb">The Mission Inn is a historical venue we both loved, even more so because of our sentimental ties in Riverside. Especially after our trip to Europe, we felt the venue mixed our Southern California roots and the architectural marvels we saw on our trip. In addition, we loved the convenience of having a ceremony, cocktail hour, and reception area all in one space.</p>
+              <p class="venue-blurb">The Mission Inn is a historical venue we both loved, especially because of our sentimental ties in Riverside. After our trip to Europe, we felt the venue mixed our Southern California roots and the architectural marvels we saw on our trip. In addition, we loved the convenience of having a ceremony, cocktail hour, and reception area all in one space.</p>
                 <p class="venue-p">“It is the most unique hotel in America. It’s a monastery, a museum, a fine hotel, a home, a boardinghouse, a mission, an art gallery and an aviator’s shrine. It combines the best features of all of the above. If you are ever in any part of California, <strong>don’t miss the famous Mission Inn of Riverside.</strong>”
                   <br/>
                   <br/>
