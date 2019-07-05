@@ -815,6 +815,10 @@ section {
       max-width: 100px;
     }
 
+    .rside-blurb {
+      padding: 0 12%;
+    }
+
     .activities {
       width: 80%;
     }
