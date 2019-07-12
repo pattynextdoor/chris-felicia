@@ -7,9 +7,9 @@
         <section id="hero">
           <h1 class="hero-h1" data-aos="fade-down">christian & felicia</h1>
           <h2 class="hero-h2" data-aos="fade-up" data-aos-delay="300">february 22, 2020</h2>
-          <div class="password">
+          <div class="password" v-if="passwordSuccess === false">
             <div data-aos="fade-up">Please enter the secret password</div>
-            <div class="password-input" v-if="passwordSuccess === false">
+            <div class="password-input">
               <input type="text" ref="passwordText" />
               <button id="password-button" v-on:click="checkPassword">Send</button>
             </div>
