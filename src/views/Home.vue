@@ -14,6 +14,12 @@
               <button id="password-button" v-on:click="checkPassword">Send</button>
             </div>
           </div>
+          <div class="password">
+            <div v-if="passwordSuccess === true">
+              Thanks for being a part of our special day!<br />
+              Scroll down for more information.
+            </div>
+          </div>
         </section>
 
       </div>
