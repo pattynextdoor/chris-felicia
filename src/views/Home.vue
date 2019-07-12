@@ -1,12 +1,24 @@
 <template>
   <div class="home">
     <div class="container">
-      <div class="content">
+
+      <div class="top">
 
         <section id="hero">
           <h1 class="hero-h1" data-aos="fade-down">christian & felicia</h1>
           <h2 class="hero-h2" data-aos="fade-up" data-aos-delay="300">february 22, 2020</h2>
+          <div class="password">
+            <div data-aos="fade-up">Please enter the secret password</div>
+            <div class="password-input" v-if="passwordSuccess === false">
+              <input type="text" ref="passwordText" />
+              <button id="password-button" v-on:click="checkPassword">Send</button>
+            </div>
+          </div>
         </section>
+
+      </div>
+
+      <div class="content" v-if="passwordSuccess === true">
 
         <section id="our-story" >
 
@@ -278,6 +290,7 @@ export default {
         'voice/2019.mp3',
       ],
       currentSlide: 0,
+      passwordSuccess: false,
     }
   },
   computed: {
@@ -324,6 +337,10 @@ export default {
         currentClip.play();
         console.log('Clip playing')
       }
+    },
+    checkPassword: function() {
+      this.$data.passwordSuccess = this.$refs.passwordText.value === "cmftwed"
+      console.log(this.passwordSuccess)
     }
   },
   mounted() {
@@ -399,7 +416,7 @@ section#hero {
   border-top-left-radius: 20px;
 }
 
-.hero-h1, .hero-h2 {
+.hero-h1, .hero-h2 , .password {
   text-align: center;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
               0px 8px 13px rgba(0,0,0,0.1),
@@ -714,6 +731,22 @@ section {
 
 .footer > a {
   text-decoration: none;
+}
+
+.password {
+  margin-top: 16px;
+  font-size: 2em;
+  font-family: 'Marigold', cursive;
+  color: white;
+}
+
+.password > label {
+  display: inline-block;
+}
+
+.password > .password-input {
+  margin: auto;
+  display: block;
 }
 
 @media only screen 
