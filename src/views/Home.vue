@@ -136,7 +136,7 @@
               <img class="schedule-icon" src="@/assets/celebration.png">
               <h3>Cocktail Hour</h3>
               <p class="schedule-time">6:30PM</p>
-              <p class="schedule-location">The Grand Parisian Ballroom</p>
+              <p class="schedule-location">Glenwood Tavern</p>
             </div>
             <div class="schedule-item" id="reception" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
               <img class="schedule-icon" src="@/assets/wedding-reception.png">
