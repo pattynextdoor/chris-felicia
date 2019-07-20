@@ -8,9 +8,8 @@
           <h1 class="hero-h1" data-aos="fade-down">christian & felicia</h1>
           <h2 class="hero-h2" data-aos="fade-up" data-aos-delay="300">february 22, 2020</h2>
           <div class="password" v-if="passwordSuccess === false">
-            <div data-aos="fade-up">Please enter the secret password</div>
             <div class="password-input">
-              <input type="text" ref="passwordText" />
+              <input type="text" ref="passwordText" placeholder="Password (case sensitive)">
               <button id="password-button" v-on:click="checkPassword">Send</button>
             </div>
           </div>
@@ -153,7 +152,7 @@
             <p><span class="parking-price">$23</span> for valet services</p>
           </div>
           
-          <p class="parking-disc" >Limited street parking on 6th and Orange St. is available, as well as a parking garage with 90 minutes free.</p>
+          <p class="parking-disc" >Street parking is available, as well as a parking garage and parking lots available on Orange St. Please see map for details.</p>
 
           <h3 class="section-h3">Accomodations</h3> 
 
@@ -244,8 +243,11 @@
             </tab>
           </tabs>
 
+        <p style="text-align: center; margin-top: 25%; font-size: 1.5em;">More information to be announced as the event date approaches!</p>
           
         </section>
+
+
         <div class="footer">
             Website by <a href="https://patricktumbucon.com">Patrick Tumbucon</a>
         </div>
@@ -272,13 +274,13 @@ export default {
   data: function() { 
     return {
       slideText: [
-        'In the spring of 2013 we met at a mutual friend’s kickback birthday party. We took a group shot of UV Blue together (His handle of choice in his frat days), and we shared a chaser of orange soda. Throughout the night, we took many drunk selfies together on Snapchat. We continued to communicate through Snapchat well after the party was over then finally exchanged numbers, and the rest was history.',
-        'We took our first international trip together to the Philippines where we met each others family abroad and were able to take a side trip to Palawan. Some of our favorite experiences were island hopping, snorkling and living it up in Mabolo (aka Mabolow to Christian, Felicia’s Lolo’s house)',
-        'Thinking about 2015 makes us not want to think of 2015. We lost a handful of close family members to cancer, and most notably both of our dads were diagnosed with pancreatic cancer, receiving the diagnosis just 10 days between each other. Both lost their battle to the disease within a year of diagnosis. Somehow we were lucky in the most unlucky way to be going through this together. Ultimately, we are thankful that they are no longer suffering, and that we got that time with them that we did. We know that they are looking down at us today and just as excited as the rest of our families.',
-        'After the difficult year, we decided to treat ourselves to an international trip down under. We stayed in a little beach town called Cottesloe not far from Perth in Western Australia, which was the perfect mix of relaxing and adventure. One of our favorite memories are feeding the kangeroos but also cooking kangeroo meat. We loved meeting all the other Australian animals like wombats, quokkas, and koalas.',
+        'In the spring of 2013, we met at a mutual friend’s kickback birthday party.  We took a group shot of UV Blue together (his handle of choice in his frat days), and we shared a chaser of orange soda.  Throughout the night, we took many drunken selfies together on Snapchat.  We continued to communicate through Snapchat well after the party was over and then finally exchanged number, and the rest was history.',
+        'We took our first international trip together to the Philippines where we met each other’s family abroad and were able to take a side trip to Palawan. Some of our favorite experiences were island-hopping, snorkeling and living it up in Mabolo (a.k.a. Mabolow to Christian, Felicia’s Lolo’s house.)',
+        'Thinking about 2015 makes us not want to think about 2015. We lost several close family members to cancer and , most notably,  both of our dads were diagnosed with pancreatic cancer  within 10 days of each other.  Both lost their battle to the disease within a year.  Somehow, we were lucky in the most unlucky way to be going through this together.  Ultimately, we are thankful that our dads are no longer suffering and that we got that time with them when we did. We know that they are looking down at us today and just as excited as the rest of our families.',
+        'After the difficult year, we decided to treat ourselves to an international trip Down Under. We stayed in a little beach town called Cottesloe not far from Perth in Western Australia, which was the perfect mix of relaxation and adventure. Some of our favorite memories were feeding the kangaroos and, ironically, cooking kangaroo meat. We loved meeting all the other Australian animals like wombats, quokkas, and koalas.',
         'Christian received a position for the county and now worked in DTLA, meaning that we worked only two blocks from each other and it made sense for us to move in together. Our favorite part about living together is getting to see each other everyday.',
-        'For our 5 year anniversary, we had a Europe trip planned for the fall starting in Barcelona. We excitedly planned our itinerary but there was one plan that half of us were not privy to. We got engaged right at sunrise on top of a fortress from the Spanish Civil War that had a 360 degree view of the city, with a secret photographer to capture everything. We celebrated with a bottle of Cava and got to enjoy the rest of our trip in engaged bliss.',
-        'It’s finally time! We have decided to throw it back to Riverside and celebrate our marriage with our closest family and friends at the Mission Inn. We are so excited to be married and have a great time with everyone on our big day.'
+        'For our 5th year anniversary, we had a European trip planned for the fall that would start in Barcelona. We excitedly planned our itinerary but there was one part of the  plan that half of us was not privy to.  We got engaged right at sunrise on top of a fortress from the Spanish Civil that had a 360-degree view of the city, with a secret photographer to capture everything.  We celebrated with a bottle of Cava and got to enjoyed the rest of our trip in engaged bliss.',
+        'It’s finally time! We have decided to throw it back to Riverside and celebrate our union with closest family and friends at the Mission Inn.  We are so excited to get married and have a great time with everyone on our big day.'
       ],
       voiceClips: [
         'voice/2013.mp3',
