@@ -442,6 +442,16 @@ section#hero {
   color: white;
 }
 
+.password-input > input {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5%;
+}
+
+.password {
+  font-family: 'Nunito Sans'
+}
+
 section#our-story {
   background-color: #282828;
 }
