@@ -316,7 +316,7 @@ export default {
         },
         {
           title: 'Where are the ceremony and reception taking place?',
-          value: 'All wedding events will be in one venue - The Mission Inn. The ceremony will be taking place at St. Francis of Assisi Chapel, The Mission Inn’s onsite chapel. The reception will take place at the Grand Parisian Ballroom within The Mission Inn. Cocktail Hour will take place at Ramona Court and Glenwood Tavern, which are attached to the Grand Parisian Ballroom.'
+          value: 'All wedding events will be in one venue - The Mission Inn. The ceremony will be taking place at St. Francis of Assisi Chapel, The Mission Inn’s onsite chapel. The reception will take place at the Grand Parisian Ballroom within The Mission Inn. Cocktail Hour will take place at Ramona Court and Glenwood Tavern, which are attached to the Grand Parisian Ballroom. You can find a map under the \'Venue\' section.'
         },
         {
           title: 'What happens after the ceremony?',
@@ -340,7 +340,7 @@ export default {
         },
         {
           title: 'How do I get to the venue?',
-          value: ''
+          value: 'See the \'Parking\' section. Southern California traffic is unpredictable and travel times can easily double or triple.  Plan accordingly.'
         },
         {
           title: 'What time should I arrive?',
@@ -348,7 +348,7 @@ export default {
         },
         {
           title: 'Where should I park?',
-          value: 'At the Mission Inn, self-parking is $17 and valet service is $23. There is limited street parking surrounding the venue, in addition to a parking structure and two parking lots on Orange Street. Click here for a map of parking in Downtown Riverside.'
+          value: 'At the Mission Inn, self-parking is $17 and valet service is $23. There is limited street parking surrounding the venue, in addition to a parking structure and two parking lots on Orange Street. See the \'Parking\' section.'
         },
         {
           title: 'Do you have a hotel block for guests? Where do you recommend I stay?',
