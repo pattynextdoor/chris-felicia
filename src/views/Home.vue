@@ -9,7 +9,7 @@
           <h2 class="hero-h2" data-aos="fade-up" data-aos-delay="300">february 22, 2020</h2>
           <div class="password" v-if="passwordSuccess === false">
             <div class="password-input">
-              <input type="text" ref="passwordText" placeholder="Password (case sensitive)">
+              <input type="text" ref="passwordText" placeholder="Password">
               <button id="password-button" v-on:click="checkPassword" v-on:keyup.enter="checkPassword">Send</button>
             </div>
           </div>
@@ -429,7 +429,7 @@ export default {
       }
     },
     checkPassword: function() {
-      this.$data.passwordSuccess = this.$refs.passwordText.value === "cmftwed"
+      this.$data.passwordSuccess = (this.$refs.passwordText.value === "cmftwed") || (this.$refs.passwordText.value === "Cmftwed")
       console.log(this.passwordSuccess)
     }
   },
