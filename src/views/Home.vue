@@ -322,7 +322,7 @@ export default {
         },
         {
           title: 'Where are the ceremony and reception taking place?',
-          value: 'All wedding events will be in one venue - The Mission Inn. The ceremony will be taking place at St. Francis of Assisi Chapel, The Mission Inn’s onsite chapel. The reception will take place at the Grand Parisian Ballroom within The Mission Inn. Cocktail Hour will take place at Ramona Court and Glenwood Tavern, which are attached to the Grand Parisian Ballroom. You can find a map under the \'Venue\' section.'
+          value: 'All wedding events will be in one venue - The Mission Inn. The ceremony will be taking place at St. Francis of Assisi Chapel, The Mission Inn’s onsite chapel. The reception will take place at the Grand Parisian Ballroom within The Mission Inn. Cocktail Hour will take place at Ramona Court and Glenwood Tavern, which are attached to the Grand Parisian Ballroom. You can find a map under the \'Event Information\' section.'
         },
         {
           title: 'What happens after the ceremony?',
@@ -362,7 +362,7 @@ export default {
         },
         {
           title: 'When is the RSVP deadline? May I RSVP online?',
-          value: 'RSVP responses are only being accepted online. The deadline to respond will be set after formal invitations have been mailed out'
+          value: 'RSVP responses are only being accepted online. The deadline to respond will be set after formal invitations have been mailed out.'
         },
         {
           title: 'Are the ceremony and reception wheelchair accessible?',
