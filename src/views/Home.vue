@@ -10,7 +10,7 @@
           <div class="password" v-if="passwordSuccess === false">
             <div class="password-input">
               <input type="text" ref="passwordText" placeholder="Password (case sensitive)">
-              <button id="password-button" v-on:click="checkPassword">Send</button>
+              <button id="password-button" v-on:click="checkPassword" v-on:keyup.enter="checkPassword">Send</button>
             </div>
           </div>
         </section>
@@ -117,6 +117,10 @@
                 </p>
             </div>
 
+            <a href="https://i.imgur.com/ON11skK.png" target="_blank">
+              <img src="https://i.imgur.com/ON11skK.png" style="display: block; margin: 0 auto; width: 75%; margin-bottom: 10%;">
+            </a>
+
             <iframe width="75%" height="450" frameborder="0" style="border:0; display: block; margin: 0 auto; margin-bottom: 10%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJg3TJrfqx3IARsr-VCrwey7I&key=AIzaSyAwG-CZCgy-J54KMnrVopJQudOe5YRSFE0" allowfullscreen></iframe> 
 
           </div>
@@ -153,6 +157,7 @@
           </div>
           
           <p class="parking-disc" >Street parking is available, as well as a parking garage and parking lots available on Orange St. Please see map for details.</p>
+          <p class="parking-disc" ><a href="https://www.missioninn.com/directions-en.html">Need directions?</a></p>
 
           <h3 class="section-h3">Accomodations</h3> 
 
@@ -243,6 +248,13 @@
             </tab>
           </tabs>
 
+          <h3 class="section-h3">faq</h3>
+
+          <VueFaqAccordion
+            :items="faq"
+            >
+          </VueFaqAccordion>
+
         <p style="text-align: center; margin-top: 25%; font-size: 1.5em;">More information to be announced as the event date approaches!</p>
           
         </section>
@@ -262,6 +274,7 @@ import AOS from 'aos'
 import { Carousel, Slide } from 'vue-carousel'
 import { Tabs, Tab } from 'vue-slim-tabs'
 import { Howl, Howler } from 'howler'
+import VueFaqAccordion from 'vue-faq-accordion'
 
 export default {
   name: 'home',
@@ -270,6 +283,7 @@ export default {
     Slide,
     Tabs,
     Tab,
+    VueFaqAccordion
   },
   data: function() { 
     return {
@@ -290,6 +304,80 @@ export default {
         'voice/2017.mp3',
         'voice/2018.mp3',
         'voice/2019.mp3',
+      ],
+      faq: [
+        {
+          title: 'What should I wear? Is there a dress code?',
+          value: 'The dress code for our wedding is formal. More specifically, ‘Southern California’ winter formal. See following question.'
+        },
+        {
+          title: 'What will be the weather be like this time of year?',
+          value: 'Since the wedding is in the last week of February, it will be cold (by Southern California standards). The weather on the exact date of our wedding in 2019 was a high of 58℉ with a low of 33℉ and in 2018 a high of  60℉ with a low of 38℉. We would advise to dress warmly but please note that all events will be hosted indoors in a controlled temperature environment.'
+        },
+        {
+          title: 'Where are the ceremony and reception taking place?',
+          value: 'All wedding events will be in one venue - The Mission Inn. The ceremony will be taking place at St. Francis of Assisi Chapel, The Mission Inn’s onsite chapel. The reception will take place at the Grand Parisian Ballroom within The Mission Inn. Cocktail Hour will take place at Ramona Court and Glenwood Tavern, which are attached to the Grand Parisian Ballroom.'
+        },
+        {
+          title: 'What happens after the ceremony?',
+          value: 'After the ceremony, the wedding party will be having pictures taken nearby for about an hour. Guests may head straight to the ballroom for cocktail hour where hors doeuvres and beverages will be served.'
+        },
+        {
+          title: 'Are there other wedding events I can attend?',
+          value: 'If you will be in Riverside for the weekend, we would love to hang out with you the night before the wedding at The Presidential Lounge at The Mission Inn. Exact time will be announced as the event approaches.'
+        },
+        {
+          title: 'What should I do if I can’t make it? May I send a substitute?',
+          value: 'We will miss you! If you cannot make it to our wedding, please let us know as soon as possible and RSVP “no” so we can plan accordingly. Due to limited space and budget, the guest list is very specific and you were chosen to share this moment with us, you are irreplaceable.'
+        },
+        {
+          title: 'Are kids welcome?',
+          value: 'We love all kids, but only children whose names are listed on the invitation are welcome. We appreciate you making arrangements ahead of time for children and others not invited so you can celebrate with us.'
+        },
+        {
+          title: 'Can I bring a date?',
+          value: 'We have a strict guest list in order to stay on budget. Our wedding is strictly RSVP only. We will only be able to accommodate those listed on your invitation.'
+        },
+        {
+          title: 'How do I get to the venue?',
+          value: ''
+        },
+        {
+          title: 'What time should I arrive?',
+          value: 'We recommend that you arrive an hour before the start of the ceremony at 6pm, to make sure everyone is on time and we can get the party started! Please note that the ceremony will start promptly and that the seating capacity of the chapel is 150 people.'
+        },
+        {
+          title: 'Where should I park?',
+          value: 'At the Mission Inn, self-parking is $17 and valet service is $23. There is limited street parking surrounding the venue, in addition to a parking structure and two parking lots on Orange Street. Click here for a map of parking in Downtown Riverside.'
+        },
+        {
+          title: 'Do you have a hotel block for guests? Where do you recommend I stay?',
+          value: 'We are arranging a hotel room block, which will be announced once finalized. Tentatively, we recommend staying at The Mission Inn or the nearby Hyatt Place.'
+        },
+        {
+          title: 'When is the RSVP deadline? May I RSVP online?',
+          value: 'RSVP responses are only being accepted online. The deadline to respond will be set after formal invitations have been mailed out'
+        },
+        {
+          title: 'Are the ceremony and reception wheelchair accessible?',
+          value: 'The Mission Inn is ADA compliant and wheelchair accessible. The historical venue was built a long time ago so although there are elevator cars to access both the chapel and ballroom, the paths traveled to access the locations are slightly different. Please allow extra time if it is necessary for you to use these paths.'
+        },
+        {
+          title: 'Will food and drinks be served at the reception? What kind of food? Will there be any vegan/vegetarian options?',
+          value: 'We will be serving a chicken or vegetarian dinner options, as well as hosting an open bar.'
+        },
+        {
+          title: 'Where are you registered?',
+          value: 'Your love, laughter, and company on our wedding day is the greatest gift of all. However, should you wish to help us celebrate with a gift, we are registered on Amazon.'
+        },
+        {
+          title: 'May I take and post pictures of the wedding on social media?',
+          value: 'We are having an “unplugged” ceremony, where we hope you can be present and attentive by not using your electronic device(s) (including cameras, cell phones, tablets, etc.) while we have our professional photographer and videographer document the event. After the ceremony, feel free to let loose and take as many pictures/selfies and post to your social media accounts. We have not yet thought of an appropriately cool/corny hashtag.'
+        },
+        {
+          title: 'I still have questions, what is the best way to contact you?',
+          value: 'For further questions, please email as at cmftwed@gmail.com'
+        }
       ],
       currentSlide: 0,
       passwordSuccess: false,
