@@ -117,16 +117,16 @@
                 </p>
             </div>
 
-            <a href="https://i.imgur.com/ON11skK.png" target="_blank">
-              <img src="https://i.imgur.com/ON11skK.png" style="display: block; margin: 0 auto; width: 75%; margin-bottom: 10%;">
-            </a>
+            
 
             <iframe width="75%" height="450" frameborder="0" style="border:0; display: block; margin: 0 auto; margin-bottom: 10%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJg3TJrfqx3IARsr-VCrwey7I&key=AIzaSyAwG-CZCgy-J54KMnrVopJQudOe5YRSFE0" allowfullscreen></iframe> 
 
           </div>
 
-          <h2 class="section-h2">Schedule</h2>
+          <h2 class="section-h2">Event Information</h2>
           <hr class="hr">
+
+          <h3 class="section-h3">Schedule</h3>
 
           <div class="schedule-grid">
             <div class="schedule-item" id="ceremony" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
@@ -148,6 +148,10 @@
               <p class="schedule-location">The Grand Parisian Ballroom</p>
             </div>
           </div>
+
+          <a href="https://i.imgur.com/ON11skK.png" target="_blank">
+            <img src="https://i.imgur.com/ON11skK.png" style="display: block; margin: 0 auto; width: 75%; margin-bottom: 10%;">
+          </a>
 
           <h3 class="section-h3">Parking</h3>
 
@@ -171,6 +175,8 @@
               <img src="@/assets/hyatt-logo.png" alt="Hyatt Logo" class="acc-logo">
             </a>
           </div>
+
+          <p style="text-align: center;">Hotel room blocks are to be announced once finalized.</p>
 
 
           <h3 class="section-h3">Whose Side? R'Side!</h3>
@@ -248,14 +254,14 @@
             </tab>
           </tabs>
 
-          <h3 class="section-h3">faq</h3>
+          <h3 class="section-h3" style="margin-top: 10%;">frequently asked questions</h3>
 
           <VueFaqAccordion
             :items="faq"
             >
           </VueFaqAccordion>
 
-        <p style="text-align: center; margin-top: 25%; font-size: 1.5em;">More information to be announced as the event date approaches!</p>
+        <p style="text-align: center; margin-top: 25%; font-size: 1.5em;">More information will be announced as the event date approaches!</p>
           
         </section>
 
@@ -288,7 +294,7 @@ export default {
   data: function() { 
     return {
       slideText: [
-        'In the spring of 2013, we met at a mutual friend’s kickback birthday party.  We took a group shot of UV Blue together (his handle of choice in his frat days), and we shared a chaser of orange soda.  Throughout the night, we took many drunken selfies together on Snapchat.  We continued to communicate through Snapchat well after the party was over and then finally exchanged number, and the rest was history.',
+        'In the spring of 2013, we met at a mutual friend’s kickback birthday party.  We took a group shot of UV Blue together (his handle of choice in his frat days), and we shared a chaser of orange soda.  Throughout the night, we took many drunken selfies together on Snapchat.  We continued to communicate through Snapchat well after the party was over and then finally exchanged numbers, and the rest was history.',
         'We took our first international trip together to the Philippines where we met each other’s family abroad and were able to take a side trip to Palawan. Some of our favorite experiences were island-hopping, snorkeling and living it up in Mabolo (a.k.a. Mabolow to Christian, Felicia’s Lolo’s house.)',
         'Thinking about 2015 makes us not want to think about 2015. We lost several close family members to cancer and , most notably,  both of our dads were diagnosed with pancreatic cancer  within 10 days of each other.  Both lost their battle to the disease within a year.  Somehow, we were lucky in the most unlucky way to be going through this together.  Ultimately, we are thankful that our dads are no longer suffering and that we got that time with them when we did. We know that they are looking down at us today and just as excited as the rest of our families.',
         'After the difficult year, we decided to treat ourselves to an international trip Down Under. We stayed in a little beach town called Cottesloe not far from Perth in Western Australia, which was the perfect mix of relaxation and adventure. Some of our favorite memories were feeding the kangaroos and, ironically, cooking kangaroo meat. We loved meeting all the other Australian animals like wombats, quokkas, and koalas.',
