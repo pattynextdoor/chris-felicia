@@ -72,6 +72,8 @@
             <img class="sound-icon" src="@/assets/sound.png">
           </div>
 
+          <p class="slide-text" style="font-style: italic">Click to listen to our story</p>
+
           <p class="slide-text">{{ slideText[currentSlide] }}</p>
 
         </section>
@@ -150,7 +152,7 @@
           </div>
 
           <a href="https://i.imgur.com/ON11skK.png" target="_blank">
-            <img src="https://i.imgur.com/ON11skK.png" style="display: block; margin: 0 auto; width: 75%; margin-bottom: 10%;">
+            <img class="venue-map" src="https://i.imgur.com/ON11skK.png" >
           </a>
 
           <h3 class="section-h3">Parking</h3>
@@ -299,8 +301,8 @@ export default {
         'Thinking about 2015 makes us not want to think about 2015. We lost several close family members to cancer and , most notably,  both of our dads were diagnosed with pancreatic cancer  within 10 days of each other.  Both lost their battle to the disease within a year.  Somehow, we were lucky in the most unlucky way to be going through this together.  Ultimately, we are thankful that our dads are no longer suffering and that we got that time with them when we did. We know that they are looking down at us today and just as excited as the rest of our families.',
         'After the difficult year, we decided to treat ourselves to an international trip Down Under. We stayed in a little beach town called Cottesloe not far from Perth in Western Australia, which was the perfect mix of relaxation and adventure. Some of our favorite memories were feeding the kangaroos and, ironically, cooking kangaroo meat. We loved meeting all the other Australian animals like wombats, quokkas, and koalas.',
         'Christian received a position for the county and now worked in DTLA, meaning that we worked only two blocks from each other and it made sense for us to move in together. Our favorite part about living together is getting to see each other everyday.',
-        'For our 5th year anniversary, we had a European trip planned for the fall that would start in Barcelona. We excitedly planned our itinerary but there was one part of the  plan that half of us was not privy to.  We got engaged right at sunrise on top of a fortress from the Spanish Civil that had a 360-degree view of the city, with a secret photographer to capture everything.  We celebrated with a bottle of Cava and got to enjoyed the rest of our trip in engaged bliss.',
-        'It’s finally time! We have decided to throw it back to Riverside and celebrate our union with closest family and friends at the Mission Inn.  We are so excited to get married and have a great time with everyone on our big day.'
+        'For our 5th year anniversary, we had a European trip planned for the fall that would start in Barcelona. We excitedly planned our itinerary but there was one part of the  plan that half of us was not privy to.  We got engaged right at sunrise on top of a fortress from the Spanish Civil that had a 360-degree view of the city, with a secret photographer to capture everything.  We celebrated with a bottle of Cava and got to enjoy the rest of our trip in engaged bliss.',
+        'It’s finally time! We have decided to throw it back to Riverside and celebrate our union with our closest family and friends at the Mission Inn.  We are so excited to get married and have a great time with everyone on our big day.'
       ],
       voiceClips: [
         'voice/2013.mp3',
@@ -382,7 +384,7 @@ export default {
         },
         {
           title: 'I still have questions, what is the best way to contact you?',
-          value: 'For further questions, please email as at cmftwed@gmail.com'
+          value: 'For further questions, please email us at cmftwed@gmail.com'
         }
       ],
       currentSlide: 0,
@@ -732,6 +734,13 @@ section#venue {
   font-size: 1em;
 }
 
+.venue-map {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 10%;
+}
+
 .parking-info {
   padding: 0 40%;
 }
@@ -935,6 +944,10 @@ section {
 
     .schedule-location {
       font-size: 0.75em;
+    }
+
+    .venue-map {
+      margin-top: 25%;
     }
 
     .parking-info {
