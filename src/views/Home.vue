@@ -168,18 +168,20 @@
           <h3 class="section-h3">Accomodations</h3> 
 
           <div class="acc-grid">
-            <a href="https://www.missioninn.com/stay.html" class="acc">
-              <img src="@/assets/mission.png" alt="Mission Inn Logo" class="acc-logo">
-            </a>
-            
+            <div class="acc-item">
+              <a href="https://www.missioninn.com/stay.html" class="acc">
+                <img src="@/assets/mission.png" alt="Mission Inn Logo" class="acc-logo">
+              </a>
+              <p>To reserve a room from our room block at Mission Inn, call the Room Reservations Department at <strong>800-843-7755 or 951-784-0300, extension 850</strong> and reference the Tumbucon & Mapa Wedding Room Block 2020 when making your reservation</p>
+            </div>
 
-            <a href="https://www.hyatt.com/en-US/hotel/california/hyatt-place-riverside-downtown/ralzr/maps-parking-transportation" class="acc">
-              <img src="@/assets/hyatt-logo.png" alt="Hyatt Logo" class="acc-logo">
-            </a>
+            <div class="acc-item">
+              <a href="https://www.hyatt.com/en-US/hotel/california/hyatt-place-riverside-downtown/ralzr/maps-parking-transportation" class="acc">
+                <img src="@/assets/hyatt-logo.png" alt="Hyatt Logo" class="acc-logo">
+              </a>
+              <p>We do not have a room block at Hyatt Place Downtown Riverside, but we do recommend it as a nearby alternative. Hyatt Place is less than a 5 minute walk from the venue. Reservations can be made online.</p>
+            </div>
           </div>
-
-          <p style="text-align: center;">Hotel room blocks are to be announced once finalized.</p>
-
 
           <h3 class="section-h3">Whose Side? R'Side!</h3>
           <p class="rside-blurb">Below are a couple of places we feel are hidden gems in Riverside and many are places we went to together in our first year of dating.</p>
@@ -761,6 +763,11 @@ section#venue {
 .acc-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.acc-item {
+  text-align: center;
+  padding: 0 15%;
 }
 
 .acc {
