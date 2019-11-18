@@ -13,91 +13,17 @@
               <button id="password-button" v-on:click="checkPassword" v-on:keyup.enter="checkPassword">Send</button>
             </div>
           </div>
+          <a class="rsvp-button" href="https://christian-felicia.app.rsvpify.com/" 
+             v-if="passwordSuccess === true"
+             data-aos="fade-down"
+             data-aos-duration="500"
+             target="_blank">RSVP</a>
+            
         </section>
 
       </div>
 
       <div class="content" v-if="passwordSuccess === true">
-
-        <section id="our-story" >
-
-          <carousel 
-            :per-page="1" 
-            @page-change="handlePageChange"
-            >
-            <slide class="slide">
-              <img src="https://i.imgur.com/90AK0vh.jpg" alt="UV Blue & Orange Soda" class="slide-img">
-              <h2 class="slide-title">2013</h2>
-              <h3 class="slide-subtitle">UV Blue & Orange Soda</h3>
-            </slide>
-
-            <slide class="slide">
-              <img src="https://i.imgur.com/luM1KqL.jpg" alt="Mabolow" class="slide-img">
-              <h2 class="slide-title">2014</h2>
-              <h3 class="slide-subtitle">Mabolow</h3>
-            </slide>
-
-            <slide class="slide">
-              <img src="https://i.imgur.com/8SMZMDF.jpg" alt="F*ck Cancer" class="slide-img">
-              <h2 class="slide-title">2015</h2>
-              <h3 class="slide-subtitle">F*ck Cancer</h3>
-            </slide>
-
-            <slide class="slide">
-              <img src="https://i.imgur.com/g3f428R.jpg" alt="Gday Mate" class="slide-img">
-              <h2 class="slide-title">2016</h2>
-              <h3 class="slide-subtitle">G'day Mate!</h3>
-            </slide>
-
-            <slide class="slide">
-              <img src="https://i.imgur.com/TH2nJ8P.jpg" alt="Moving Up & Moving In" class="slide-img">
-              <h2 class="slide-title">2017</h2>
-              <h3 class="slide-subtitle">Moving Up & Moving In</h3>
-            </slide>
-
-            <slide class="slide">
-              <img src="https://i.imgur.com/LLnaDLD.jpg" alt="Sunrise Surprise" class="slide-img">
-              <h2 class="slide-title">2018</h2>
-              <h3 class="slide-subtitle">Sunrise Surprise</h3>
-            </slide>
-            
-            <slide class="slide">
-              <img src="https://i.imgur.com/mzzI6DV.jpg" alt="Mission: Down the Aisle" class="slide-img">
-              <h2 class="slide-title">2019-2020</h2>
-              <h3 class="slide-subtitle">Mission: Down the Aisle</h3>
-            </slide>
-          </carousel>
-
-          <div class="sound-btn" v-on:click="toggleAudio">
-            <img class="sound-icon" src="@/assets/sound.png">
-          </div>
-
-          <p class="slide-text" style="font-style: italic">Click to listen to our story</p>
-
-          <p class="slide-text">{{ slideText[currentSlide] }}</p>
-
-        </section>
-
-        <section id="gallery">
-          <carousel 
-            :per-page="1" 
-            >
-
-            <slide class="slide"><img src="https://i.imgur.com/zmVMgee.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/SsFDdBZ.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/f55FZ22.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/ti7XerO.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/sD1qZ6r.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/6IhUCbd.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/iXLyod2.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/WFPiQib.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/BijwowR.jpg" alt="" class="slide-img gal-img"></slide>
-            <slide class="slide"><img src="https://i.imgur.com/T4yhOai.jpg" alt="" class="slide-img gal-img"></slide>
-
-          </carousel>
-          <iframe class="youtube" width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
-        </section>
-        
         <section id="venue">
           <h2 class="section-h2" data-aos="fade-down" data-aos-duration="500">
             Venue
@@ -258,6 +184,18 @@
             </tab>
           </tabs>
 
+          <h3 class="section-h3">registry</h3>
+          <p class="registry-text">Your love, laughter, and company on our wedding day is the greatest gift of all. However, should you wish to help us celebrate with a gift we have registered with the stores below:</p>
+          <div class="grid-2 registry-grid">
+            <a class="registry-item" href="https://www.amazon.com/wedding/share/cmftwed">
+              <img src="http://pluspng.com/img-png/wayfair-logo-vector-png-amazon-logo-vector-512.png" alt="" class="registry">
+            </a>
+            <a style="transform: translateY(33%)" class="registry-item" href="https://www.wayfair.com/registry/wedding/FeliciaAndChristian">
+              <img src="http://pluspng.com/img-png/wayfair-logo-vector-png--400.png" alt="" class="registry">
+            </a>
+          </div>
+
+
           <h3 class="section-h3" style="margin-top: 10%;">frequently asked questions</h3>
 
           <VueFaqAccordion
@@ -268,6 +206,86 @@
         <p style="text-align: center; margin-top: 25%; font-size: 1.5em;">More information will be announced as the event date approaches!</p>
           
         </section>
+        <section id="our-story" >
+
+          <carousel 
+            :per-page="1" 
+            @page-change="handlePageChange"
+            >
+            <slide class="slide">
+              <img src="https://i.imgur.com/90AK0vh.jpg" alt="UV Blue & Orange Soda" class="slide-img">
+              <h2 class="slide-title">2013</h2>
+              <h3 class="slide-subtitle">UV Blue & Orange Soda</h3>
+            </slide>
+
+            <slide class="slide">
+              <img src="https://i.imgur.com/luM1KqL.jpg" alt="Mabolow" class="slide-img">
+              <h2 class="slide-title">2014</h2>
+              <h3 class="slide-subtitle">Mabolow</h3>
+            </slide>
+
+            <slide class="slide">
+              <img src="https://i.imgur.com/8SMZMDF.jpg" alt="F*ck Cancer" class="slide-img">
+              <h2 class="slide-title">2015</h2>
+              <h3 class="slide-subtitle">F*ck Cancer</h3>
+            </slide>
+
+            <slide class="slide">
+              <img src="https://i.imgur.com/g3f428R.jpg" alt="Gday Mate" class="slide-img">
+              <h2 class="slide-title">2016</h2>
+              <h3 class="slide-subtitle">G'day Mate!</h3>
+            </slide>
+
+            <slide class="slide">
+              <img src="https://i.imgur.com/TH2nJ8P.jpg" alt="Moving Up & Moving In" class="slide-img">
+              <h2 class="slide-title">2017</h2>
+              <h3 class="slide-subtitle">Moving Up & Moving In</h3>
+            </slide>
+
+            <slide class="slide">
+              <img src="https://i.imgur.com/LLnaDLD.jpg" alt="Sunrise Surprise" class="slide-img">
+              <h2 class="slide-title">2018</h2>
+              <h3 class="slide-subtitle">Sunrise Surprise</h3>
+            </slide>
+            
+            <slide class="slide">
+              <img src="https://i.imgur.com/mzzI6DV.jpg" alt="Mission: Down the Aisle" class="slide-img">
+              <h2 class="slide-title">2019-2020</h2>
+              <h3 class="slide-subtitle">Mission: Down the Aisle</h3>
+            </slide>
+          </carousel>
+
+          <div class="sound-btn" v-on:click="toggleAudio">
+            <img class="sound-icon" src="@/assets/sound.png">
+          </div>
+
+          <p class="slide-text" style="font-style: italic">Click to listen to our story</p>
+
+          <p class="slide-text">{{ slideText[currentSlide] }}</p>
+
+        </section>
+
+        <section id="gallery">
+          <carousel 
+            :per-page="1" 
+            >
+
+            <slide class="slide"><img src="https://i.imgur.com/zmVMgee.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/SsFDdBZ.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/f55FZ22.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/ti7XerO.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/sD1qZ6r.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/6IhUCbd.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/iXLyod2.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/WFPiQib.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/BijwowR.jpg" alt="" class="slide-img gal-img"></slide>
+            <slide class="slide"><img src="https://i.imgur.com/T4yhOai.jpg" alt="" class="slide-img gal-img"></slide>
+
+          </carousel>
+          <iframe class="youtube" width="1000" height="750" src="https://www.youtube.com/embed/LPSqSW9nrzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; display: block; margin: 0 auto; margin-top: 5%;"></iframe>
+        </section>
+        
+        
 
 
         <div class="footer">
@@ -438,9 +456,38 @@ export default {
         console.log('Clip playing')
       }
     },
+    injectRsvpForm: function() {
+      let section = document.getElementById('rsvp-form');
+      
+      let script1 = document.createElement('script');
+      let script2 = document.createElement('script');
+      let script3 = document.createElement('script');
+
+      let inlineScript = document.createTextNode('iFrameResize({autoResize: true,checkOrigin: false,heightCalculationMethod: \'max\', enablePublicMethods: true}, \"#RSVPifyIFrame\");');
+
+      script1.setAttribute('type', 'text/javascript');
+      script1.setAttribute('src', 'https://app.rsvpify.com/embed/500295579');
+      script1.setAttribute('scrolling', 'yes')
+
+      script2.setAttribute('type', 'text/javascript');
+      script2.setAttribute('src', 'https://app.rsvpify.com/js/iframeResizer.min.js');
+
+      script3.setAttribute('type', 'text/javascript');
+      script3.setAttribute('type', 'text/javascript');
+      script3.appendChild(inlineScript)
+
+      section.insertAdjacentElement('beforeend', script1);
+      section.insertAdjacentElement('beforeend', script2);
+      section.insertAdjacentElement('beforeend', script3);
+      
+    },
     checkPassword: function() {
-      this.$data.passwordSuccess = (this.$refs.passwordText.value === "cmftwed") || (this.$refs.passwordText.value === "Cmftwed")
+      let vm = this;
+      vm.$data.passwordSuccess = (this.$refs.passwordText.value.trim() === "cmftwed") || (this.$refs.passwordText.value === "Cmftwed")
       console.log(this.passwordSuccess)
+      setTimeout(function() {
+        vm.injectRsvpForm();
+      }, 500)
     }
   },
   mounted() {
@@ -514,6 +561,7 @@ section#hero {
   background-position: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  text-align: center;
 }
 
 .hero-h1, .hero-h2 , .password {
@@ -871,6 +919,66 @@ section {
   display: block;
 }
 
+.registry-text {
+  text-align: center;
+  padding: 2% 35%;
+}
+
+.registry-item {
+  display: block;
+}
+
+.registry-item > img {
+  align-self: center;
+  margin-left: 12.5%;
+}
+
+section#rsvp-form {
+  padding-top: 10%;
+}
+
+.rsvp-button {
+  text-align: center;
+  z-index: 999999;
+  margin: 0 auto;
+  padding: 1% 4%;
+  display: inline-block;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  line-height: 1.25;
+  background: #e74c3c;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: darken(#e74c3c,25%);
+  }
+  &:active {
+    &:after {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px)
@@ -981,6 +1089,20 @@ section {
     .activities {
       width: 80%;
     }
+
+    .registry-text {
+      padding: 1% 12.5%;
+    }
+
+    .registry-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .registry {
+      width: 75%;
+    }
+
+    
   }
 
 </style>
