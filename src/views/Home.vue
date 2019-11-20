@@ -202,8 +202,6 @@
             :items="faq"
             >
           </VueFaqAccordion>
-
-        <p style="text-align: center; margin-top: 25%; font-size: 1.5em;">More information will be announced as the event date approaches!</p>
           
         </section>
         <section id="our-story" >
