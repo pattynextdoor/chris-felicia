@@ -333,6 +333,10 @@ export default {
       ],
       faq: [
         {
+          title: 'When is the RSVP deadline? May I RSVP online?',
+          value: 'The deadline to respond is February 1st, 2020. RSVP responses are only being accepted online, through the red RSVP button at the top of the page. Please enter in your first and last name exactly as it is spelled out on the envelope of your formal invitation.'
+        },
+        {
           title: 'What should I wear? Is there a dress code?',
           value: 'The dress code for our wedding is formal. More specifically, ‘Southern California’ winter formal. See following question.'
         },
@@ -378,7 +382,7 @@ export default {
         },
         {
           title: 'Do you have a hotel block for guests? Where do you recommend I stay?',
-          value: 'We are arranging a hotel room block, which will be announced once finalized. Tentatively, we recommend staying at The Mission Inn or the nearby Hyatt Place.'
+          value: 'To reserve a room from our room block at Mission Inn, call the Room Reservations Department at 800-843-7755 or 951-784-0300, extension 850 and reference the Tumbucon & Mapa Wedding Room Block 2020 when making your reservation  We do not have a room block at Hyatt Place Downtown Riverside, but we do recommend it as a nearby alternative. Hyatt Place is less than a 5 minute walk from the venue. Reservations can be made online.'
         },
         {
           title: 'When is the RSVP deadline? May I RSVP online?',
@@ -390,11 +394,11 @@ export default {
         },
         {
           title: 'Will food and drinks be served at the reception? What kind of food? Will there be any vegan/vegetarian options?',
-          value: 'We will be serving a chicken or vegetarian dinner options, as well as hosting an open bar.'
+          value: 'We will be serving chicken or vegetarian dinner options, as well as hosting an open bar. There will be no seafood options for passed appetizers or dinner due to Felicia’s severe allergy. If you have an allergy or intolerance please let us know through your RSVP so we can do our best to accommodate.'
         },
         {
           title: 'Where are you registered?',
-          value: 'Your love, laughter, and company on our wedding day is the greatest gift of all. However, should you wish to help us celebrate with a gift, we are registered on Amazon.'
+          value: 'Your love, laughter, and company on our wedding day is the greatest gift of all. However, should you wish to help us celebrate with a gift, we are registered on Amazon and Wayfair. Please see the registry section on this page.'
         },
         {
           title: 'May I take and post pictures of the wedding on social media?',
