@@ -385,10 +385,6 @@ export default {
           value: 'To reserve a room from our room block at Mission Inn, call the Room Reservations Department at 800-843-7755 or 951-784-0300, extension 850 and reference the Tumbucon & Mapa Wedding Room Block 2020 when making your reservation  We do not have a room block at Hyatt Place Downtown Riverside, but we do recommend it as a nearby alternative. Hyatt Place is less than a 5 minute walk from the venue. Reservations can be made online.'
         },
         {
-          title: 'When is the RSVP deadline? May I RSVP online?',
-          value: 'RSVP responses are only being accepted online. The deadline to respond will be set after formal invitations have been mailed out.'
-        },
-        {
           title: 'Are the ceremony and reception wheelchair accessible?',
           value: 'The Mission Inn is ADA compliant and wheelchair accessible. The historical venue was built a long time ago so although there are elevator cars to access both the chapel and ballroom, the paths traveled to access the locations are slightly different. Please allow extra time if it is necessary for you to use these paths.'
         },
